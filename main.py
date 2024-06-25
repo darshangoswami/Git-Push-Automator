@@ -26,3 +26,14 @@ print(f"Tracked: {tracked_subfolders}")
 new_subfolders = (current_subfolders - tracked_subfolders) - hidden_files
 
 print(f"New sub-folders: {new_subfolders}")
+
+if new_subfolders:
+  print(f"New sub-folder(s) found: {new_subfolders}")
+
+  for subfolder in new_subfolders:
+    run_command(f'git add {subfolder}')
+    run_command(f"git commit -m 'added {subfolder}'")
+
+  run_command('git push -u origin main')
+else:
+  print('No new sub-folder(s) found')
