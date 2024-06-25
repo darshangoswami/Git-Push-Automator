@@ -32,7 +32,11 @@ if new_subfolders:
 
   for subfolder in new_subfolders:
     run_command(f'git add {subfolder}')
-    run_command(f"git commit -m 'added {subfolder}'")
+    status = run_command('git status --short')
+    if status.stdout:
+        run_command(f"git commit -m 'added {subfolder}'")
+    else:
+        print(f"No changes to commit for {subfolder}")
 
   run_command('git push -u origin main')
 else:
