@@ -11,10 +11,12 @@ I designed this automation script to streamline the process of tracking and push
 ## How It Works
 
 1. **Initialization**:
+
    - The script first identifies all current sub-folders in the specified `LeetCode` directory.
    - It then retrieves the list of tracked sub-folders from the Git repository.
 
 2. **Detection of New Sub-Folders**:
+
    - Compares the current sub-folders with the tracked sub-folders to detect any new additions.
    - Excludes hidden files or directories such as `.git`.
 
@@ -32,20 +34,27 @@ I designed this automation script to streamline the process of tracking and push
 ## Usage
 
 1. **Clone the Repository**:
+
    ```sh
    git clone https://github.com/yourusername/your-repo.git
 
+   ```
+
 2. **Update Folder Path**:
-   
+
    At line 4, add the path to the folder you want to work with, which is also the local repository.
 
-2. **Navigate to Your Local Repository**:
+3. **Navigate to Your Local Repository**:
+
    ```sh
    cd /path/to/your/repo
 
-3. **Run the Script**:
+   ```
+
+4. **Run the Script**:
    ```sh
    python3 main.py
+   ```
 
 ## Future Plans
 
