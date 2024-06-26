@@ -35,6 +35,10 @@ I designed this automation script to streamline the process of tracking and push
    ```sh
    git clone https://github.com/yourusername/your-repo.git
 
+2. **Update Folder Path**:
+   
+   At line 4, add the path to the folder you want to work with, which is also the local repository.
+
 2. **Navigate to Your Local Repository**:
    ```sh
    cd /path/to/your/repo
