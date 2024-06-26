@@ -1,6 +1,6 @@
-# LeetCode Solutions Automator
+# Git Push Automator
 
-I designed this automation script to streamline the process of tracking and pushing new solution folders for LeetCode problems to GitHub repository. It automatically detects new sub-folders within the local `LeetCode` directory and pushes them to the remote repository, ensuring the online repository is always up-to-date with your latest solutions.
+I designed this automation script to streamline the process of tracking and pushing new solution folders for LeetCode problems to GitHub repository. It automatically detects new sub-folders within the local `LeetCode` directory and pushes them to the remote repository, ensuring the online repository is always up-to-date with the latest solutions. You can use it with any of your projects and modify the code to track all the files instead of just the sub-folders according to your requirements.
 
 ## Features
 
