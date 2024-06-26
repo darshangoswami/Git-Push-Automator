@@ -31,7 +31,7 @@ if new_subfolders:
   print(f"New sub-folder(s) found: {new_subfolders}")
 
   for subfolder in new_subfolders:
-    run_command(f'git add {subfolder}')
+    run_command(f'git add "{subfolder}"')
     status = run_command('git status --short')
     if status.stdout:
         run_command(f"git commit -m 'added {subfolder}'")
