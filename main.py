@@ -15,8 +15,6 @@ def run_command(command):
 
 current_subfolders = set(next(os.walk(leetcode_folder))[1])
 
-print(f"Current: {current_subfolders}")
-
 tracked_subfolders = set(
   item.split('/')[0] for item in run_command('git ls-files').stdout.split('\n') if os.path.isdir(os.path.join(leetcode_folder, item.split('/')[0]))
 )
@@ -24,8 +22,6 @@ tracked_subfolders = set(
 print(f"Tracked: {tracked_subfolders}")
 
 new_subfolders = (current_subfolders - tracked_subfolders) - hidden_files
-
-print(f"New sub-folders: {new_subfolders}")
 
 if new_subfolders:
   print(f"New sub-folder(s) found: {new_subfolders}")
