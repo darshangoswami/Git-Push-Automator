@@ -42,3 +42,8 @@ I designed this automation script to streamline the process of tracking and push
 3. **Run the Script**:
    ```sh
    python3 main.py
+
+## Future Plans
+
+- Create an alias to run the script from the root directory.
+- LeetCode integrations to fetch latest solutions from LeetCode and push it to GitHub.
