@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-leetcode_folder = '/Users/dexter/Developer/LeetCode'
+leetcode_folder = '/path/to/your/LeetCode/folder'
 hidden_files = {'.git'}
 
 def run_command(command):
