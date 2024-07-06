@@ -56,7 +56,18 @@ I designed this automation script to streamline the process of tracking and push
    python3 main.py
    ```
 
+5. **Add an alias to run the script conveniently [Optional]**:
+   
+   To your '.bashrc' or '.zshrc' add the following line:
+   ```sh
+   alias runmyscript='python /path/to/your/script.py'
+   ```
+   Run the alias in your terminal:
+   ```sh
+   runmyscript
+   ```
+
 ## Future Plans
 
-- Create an alias to run the script from the root directory.
+- ~~Create an alias to run the script from the root directory.~~
 - LeetCode integrations to fetch latest solutions from LeetCode and push it to GitHub.
